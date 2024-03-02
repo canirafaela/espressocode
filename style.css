@@ -30,7 +30,7 @@ ul{
 nav {
     max-width: 1120px;
     margin: auto;
-    padding: 1.5rem 10rem;
+    padding: 1.5rem 2rem;
 
     display: flex;
     flex-direction: row;
@@ -274,3 +274,55 @@ footer {
 
 }
 
+/* Adicionadas regras de mídia para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        /* Empilhado em telas menores */
+        align-items: center;
+        /* Centralizado na horizontal */
+    }
+
+    .menu {
+        flex-direction: column;
+        /* Empilhado em telas menores */
+        gap: 1rem;
+        /* Espaçamento entre os itens */
+        align-items: center;
+        /* Centralizado na horizontal */
+    }
+
+    .github {
+        margin-top: 1rem;
+        /* Adiciona espaçamento acima do elemento "github" */
+        margin-right: 1rem;
+        /* Adiciona espaçamento à direita do elemento "github" */
+    }
+
+    .receitas-card-container {
+        padding: 0rem 1rem;
+        /* Reduzir o preenchimento para telas menores */
+    }
+
+    .receitas-card {
+        flex-basis: calc(100% - 2rem);
+        /* Definir a largura dos cartões para preencher o espaço disponível */
+        margin: 1rem;
+        /* Adicionar margem entre os cartões */
+    }
+
+    footer {
+        padding: 2rem;
+        /* Ajustar o preenchimento do footer para telas menores */
+        text-align: left;
+        /* Centralizar o texto do footer à esquerda */
+    }
+
+    .footer-copy,
+    .footer-autor {
+        display: block;
+        /* Garantir que os elementos sejam exibidos como blocos */
+        margin-bottom: 1rem;
+        /* Adicionar espaçamento entre os elementos */
+    }
+}
