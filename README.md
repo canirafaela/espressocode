@@ -7,4 +7,6 @@ Criar um site estático para praticar os conceitos básicos de HTML e CSS, inclu
 
 ## 📂 Estrutura do Projeto
 O projeto é composto pelos seguintes arquivos e diretórios:
-
+- Index.html
+- Style.css
+- Assets (imgs)
